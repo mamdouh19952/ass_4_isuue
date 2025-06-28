@@ -1,0 +1,47 @@
+body{
+    background-color: #23333D;
+
+}
+
+#logIn  {
+background-color: #23333D;
+}
+#logIn h1 {
+    color: #17A2B8;
+}
+#signUp h1 {
+    color: #17A2B8;
+}
+#logIn button {
+    color: #17A2B8;
+}
+#logIn a {
+    color: white;
+        text-decoration: none;
+
+}
+#signUp  a {
+    color: white;
+        text-decoration: none;
+
+}
+#logIn a:hover{
+    text-decoration: underline;
+    text-decoration-color: white !important;
+
+}
+#signUp a:hover{
+    text-decoration: underline;
+    text-decoration-color: white !important;
+
+}
+
+#signUp input{
+    background-color: transparent !important;
+}
+#signUp input::placeholder{
+    color: gray !important;
+}
+#signUp input:focus{
+    box-shadow: none !important;
+}
