@@ -3,6 +3,7 @@ let login = document.querySelector(".logInBtn");
 let emailInput=document.getElementById("emailInput");
 let passInput = document.getElementById("passwardInput");
 
+var loginNameHome ;
 login.addEventListener("click", function () {
   var currentEmail = emailInput.value;
   console.log(currentEmail);
@@ -14,8 +15,12 @@ login.addEventListener("click", function () {
 
   for (let index = 0; index < allAccounts.length; index++) {
     if (allAccounts[index].email === currentEmail && allAccounts[index].pass === currentPass) {
+
       console.log("✅ Login Success");
       window.location.href = "./pages/home.html";
+loginNameHome=index
+
+localStorage.setItem("loginNameHome",JSON.stringify(loginNameHome))
 
     }
 
